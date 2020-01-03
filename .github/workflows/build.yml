@@ -49,6 +49,7 @@ jobs:
       - run: yarn run test
 
   publish:
+    if: contains(github.ref, 'refs/heads/master')
     needs: [compile, test]
     runs-on: ubuntu-latest
     steps:
