@@ -1,0 +1,32 @@
+{
+	"env": {
+	"es6": true,
+		"node": true
+},
+	"extends": [
+	"eslint:recommended",
+	"plugin:@typescript-eslint/eslint-recommended",
+	"prettier"
+],
+	"globals": {
+	"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+},
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"project": "./tsconfig.json"
+	},
+	"plugins": [
+	"@typescript-eslint",
+	"prettier"
+],
+	"rules": {
+		"no-unused-vars": "warn",
+		"no-constant-condition": "warn",
+		"no-empty": "warn",
+		"@typescript-eslint/explicit-function-return-type": "warn",
+		"prettier/prettier": "warn"
+	}
+}
