@@ -1,6 +1,6 @@
 {
-  "name": "template",
-  "version": "0.0.1",
+  "name": "@aelesia/npm-template",
+  "version": "0.0.2",
   "description": "Template for NPM packages",
   "author": "",
   "license": "MIT",
@@ -8,9 +8,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepublish": "tsc",
+    "prepublish": "tsc --incremental false",
     "compile": "tsc --noEmit",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src/** tests/** index.ts --fix"
   },
   "dependencies": {},
   "devDependencies": {
