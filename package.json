@@ -1,5 +1,4 @@
 {
-  "name": "@aelesia/npx-template",
   "version": "0.0.0",
   "description": "Template for NPX packages",
   "author": "aelesia",
@@ -8,9 +7,10 @@
   "bin": "dist/index.js",
   "scripts": {
     "prepublish": "tsc --incremental false",
-    "compile": "tsc --noEmit && eslint src/** tests/** index.ts",
+    "compile": "tsc --noEmit && eslint src/**/*.ts tests/**/*.ts index.ts",
     "test": "jest",
-    "lint": "eslint src/** tests/** index.ts --fix"
+    "test_coverage": "jest --collectCoverage",
+    "lint": "eslint src/**/*.ts tests/**/*.ts index.ts --fix"
   },
   "dependencies": {},
   "devDependencies": {
