@@ -1,5 +1,5 @@
-import { some_class, some_function } from '../index'
-import some_singleton from '../index'
+import { some_class, some_function } from '../src/Something'
+import some_singleton from '../src/Something'
 
 describe('Sample', () => {
   test('some_class', async () => {
